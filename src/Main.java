@@ -32,13 +32,11 @@ public class Main {
             System.out.print(thirdArr[thirdIndex] + ", ");
         }
 
-        for (int fourthIndex = 0; fourthIndex <= thirdArr.length - 1; fourthIndex++) {
-            if (thirdArr[fourthIndex] % 2 != 0) {
-                System.out.print((thirdArr[fourthIndex] + 1) + " ");
-            } else {
-                System.out.print(thirdArr[fourthIndex] + " ");
+        for (int fourthIndex = 0; fourthIndex <= arr.length - 1; fourthIndex++) {
+            if (arr[fourthIndex] % 2 != 0) {
+                arr[fourthIndex] = arr[fourthIndex] + 1;
             }
         }
-
+        System.out.println(Arrays.toString(arr));
     }
 }
